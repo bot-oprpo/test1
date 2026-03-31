@@ -41,7 +41,9 @@ GET:
 
 ## Инструкция по сборке:
 ### 1. Для запуска сервера с хранением в файловой системе:
-```./gradlew run```
+```
+./gradlew run
+```
 
 ### 2. Для запуска сервера с хранением в памяти:
 В Server.java поменять MyKVServiceFactoryFile на MyKVServiceFactoryMemory.
