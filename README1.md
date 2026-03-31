@@ -57,9 +57,12 @@ GET:
 - HTTP DELETE /v0/entity?id=<ID>:  ```curl -i -X DELETE "http://localhost:8080/v0/entity?id=1"```
 
 ### 4. Для запуска тестов:
-1. docker pull haydenjeune/wrk2
+1. ```
+   docker pull haydenjeune/wrk2
+   ```
 2. Запустить в одном окне сервер
 3. Во втором окне выполнить команду:
+4. 
 Для PUT:
 ```
 docker run --rm -v "%cd%:/data" haydenjeune/wrk2 -t1 -c1 -R200 -d30s --latency -s /data/put.lua http://host.docker.internal:8080
