@@ -51,7 +51,9 @@ GET:
 Аналогично, ```./gradlew run```
 
 ### 3. Отправка запросов на сервер:
-- HTTP GET /v0/status: ```curl -i -X GET "http://localhost:8080/v0/status"```
+- HTTP GET /v0/status: ```
+  curl -i -X GET "http://localhost:8080/v0/status"
+  ```
 - HTTP GET /v0/entity?id=<ID>: ```curl -i -X GET "http://localhost:8080/v0/entity?id=1"```
 - HTTP PUT /v0/entity?id=<ID>: ```curl -i -X PUT "http://localhost:8080/v0/entity?id=1" -d "my_data"```
 - HTTP DELETE /v0/entity?id=<ID>:  ```curl -i -X DELETE "http://localhost:8080/v0/entity?id=1"```
